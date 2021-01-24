@@ -1,0 +1,13 @@
+requests
+scikit-learn
+tqdm
+progressbar
+albumentations
+imgaug
+imageio
+matplotlib
+pillow  
+opencv-python
+numpy 
+python-magic
+pandas
