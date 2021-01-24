@@ -90,7 +90,7 @@ Use **Predictor** class in `predict.py`
 predictor = Predictor(model_path, labels_path)
 predicted_label = predictor.predict(img_path)
 ```
-Where 
+Where <br />
 **model_path** is the path to `model.pkl` file generated from training <br />
 **labels_path** is the path to `labels.npy` file generated from do_data <br />
 **img_path** is tha path to image needed to be predicted
