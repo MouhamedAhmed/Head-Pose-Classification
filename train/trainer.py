@@ -46,7 +46,7 @@ def train(learning_rate, learning_rate_decay, learning_rate_decay_step_size, bat
         img_size=img_size,
         transform=transforms.ToTensor())
 
-    train_set, test_set = torch.utils.data.random_split(dataset, [int(0.8 * len(dataset)), int(0.2 * len(dataset))])
+    train_set, test_set = torch.utils.data.random_split(dataset, [int(np.ceil(0.8 * len(dataset))), int(np.floor(0.2 * len(dataset)))])
 
     train_loader = DataLoader(dataset=train_set, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(dataset=test_set, batch_size=batch_size, shuffle=True)
