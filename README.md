@@ -56,13 +56,17 @@ We tried contrastive loss along with cross entropy loss and it didn't make a dif
 ## To Train
 ### Prepare Dataset
 ```bash
-python train/trainer.py --do_data -dataset_path <path_to_dataset>
+cd train
+python trainer.py --do_data -dataset_path <path_to_dataset>
+cd ..
 ```
 Where **path_to_dataset** is path to dataset folder that contains folder for each label
 
 ### Train
 ```bash
-python train/trainer.py --do_train -arch <model_architecture> -lr <learning_rate> -lr_decay <learning_rate_decay> -lr_decay_step_size <learning_rate_decay_step_size> -batch <batch_size> -epochs <num_of_epochs> -size <img_size>
+cd train
+python trainer.py --do_train -arch <model_architecture> -lr <learning_rate> -lr_decay <learning_rate_decay> -lr_decay_step_size <learning_rate_decay_step_size> -batch <batch_size> -epochs <num_of_epochs> -size <img_size>
+cd ..
 ```
 Where 
 <br />
@@ -94,3 +98,4 @@ Where <br />
 **model_path** is the path to `model.pkl` file generated from training <br />
 **labels_path** is the path to `labels.npy` file generated from do_data <br />
 **img_path** is tha path to image needed to be predicted
+
