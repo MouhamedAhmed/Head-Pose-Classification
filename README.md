@@ -30,6 +30,7 @@ Back faces are generated from 'Google Image Search' using `simple_image_download
 - hijabi girl head back
 - muslim girl back
 - Red head girl back
+<br />
  for the first 100 search results then they are filtered manually then different data augmentation techniques are used...
 
 ## Usage
