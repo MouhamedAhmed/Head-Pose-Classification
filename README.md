@@ -1,3 +1,4 @@
+This Repository is for classification head poses (side-frontal-back) on a generated dataset using different techniques like StyleGAN, Google Search Image, Data Augmentation, etc...
 # Installation
 Create Conda environment with pytorch and tensorflow 1.15 needed for interfaceGAN and install other dependencies on it from `requirements.txt`.
 ```bash
