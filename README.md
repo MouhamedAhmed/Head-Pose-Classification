@@ -65,13 +65,14 @@ Where **path_to_dataset** is path to dataset folder that contains folder for eac
 python train/trainer.py --do_train -arch <model_architecture> -lr <learning_rate> -lr_decay <learning_rate_decay> -lr_decay_step_size <learning_rate_decay_step_size> -batch <batch_size> -epochs <num_of_epochs> -size <img_size>
 ```
 Where 
-**model_architecture** is **simple** or **resnet**, default is simple
-**learning_rate** is the starting learning rate, default is 0.001
-**learning_rate_decay** is the decay rate of learning rate after each step size, default is 0.2
-**learning_rate_decay_step_size** is the number of epochs after which decay learning rate occurs, default is 5
-**batch_size** is the maximum number of samples per batch, default is 32
-**num_of_epochs** is the total number of epochs, default is 50
-**img_size** is the size to downsample images to before training, default is 256
+<br />
+**model_architecture** is **simple** or **resnet**, default is simple <br />
+**learning_rate** is the starting learning rate, default is 0.001 <br />
+**learning_rate_decay** is the decay rate of learning rate after each step size, default is 0.2 <br />
+**learning_rate_decay_step_size** is the number of epochs after which decay learning rate occurs, default is 5 <br />
+**batch_size** is the maximum number of samples per batch, default is 32 <br />
+**num_of_epochs** is the total number of epochs, default is 50 <br />
+**img_size** is the size to downsample images to before training, default is 256 
 
 ### Model Training Log: Convergence after 4 to 5 Epochs
     --- Epoch: 0	Train acc: 0.5781	Valid acc: 0.5389	
@@ -90,6 +91,6 @@ predictor = Predictor(model_path, labels_path)
 predicted_label = predictor.predict(img_path)
 ```
 Where 
-**model_path** is the path to `model.pkl` file generated from training
-**labels_path** is the path to `labels.npy` file generated from do_data
+**model_path** is the path to `model.pkl` file generated from training <br />
+**labels_path** is the path to `labels.npy` file generated from do_data <br />
 **img_path** is tha path to image needed to be predicted
